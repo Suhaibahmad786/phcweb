@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    background-color: #13111A;
+    max-width: 1120px;
+    margin: 0 auto;
+    text-align: start;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+p {
+    color: #B7B4C7;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gradiant-container {
+    width: 516px;
+    background: linear-gradient(to right, #A8008A, #F9CA72);
+    border-radius: 25px;
+}
+
+.gradiant-border {
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to left, #A8008A, #F9CA72);
+    padding: 10px 20px;
+}
+
+#header {
+    width: 100%;
+}
+#term-condion{
+    margin-top: 60px;
+}
+.term-condition-container h1,
+.ownership-container h2{
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: 1px;
+}
+#term p:nth-child(2),
+.ownership-container p:nth-child(2){
+padding-top: 10px;
+   font-size: 24px;
+   line-height: 30px;
+   font-weight: 500;
+}
+.pera-gap{
+    display: inline-block;
+    padding-top: 20px !important;
+}
+#term p:nth-child(3),
+.ownership-container p:nth-child(3){
+    padding-top: 30px;
+}
+#ownership{
+    margin-top: 80px;
+}
+#footer{
+    margin-top: 100px;
+}
+@media screen and (max-width: 1024px){
+    #term-condion {
+        margin-top: 30px;
+        padding: 10px;
+    }
+    .term-condition-container h1, .ownership-container h2 {
+        font-size: 46px;
+        line-height: 62px;
+    }
+    #term p:nth-child(2), .ownership-container p:nth-child(2) {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    #term p:nth-child(3), .ownership-container p:nth-child(3) {
+        padding-top: 20px;
+        color: #B7B4C7;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+    #ownership {
+        margin-top: 20px;
+        padding: 10px   ;
+    }
+    #footer {
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 768px){
+    #term {
+        width: 100%;
+    }
+    .term-condition-container h1, .ownership-container h2 {
+        font-size: 26px;
+        line-height: 46px;
+    }
+    #term p:nth-child(2), .ownership-container p:nth-child(2) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    #term p:nth-child(3), .ownership-container p:nth-child(3) {
+        padding-top: 15px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    #ownership {
+        margin: 0;
+    }
+    #footer {
+        margin-top: 20px;
+    }
+}

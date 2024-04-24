@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    background-color: #13111A;
+    max-width: 1120px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+p {
+    color: #B7B4C7;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gradiant-container {
+    width: 516px;
+    background: linear-gradient(to right, #A8008A, #F9CA72);
+    border-radius: 25px;
+}
+
+.gradiant-border {
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to left, #A8008A, #F9CA72);
+    padding: 10px 20px;
+}
+
+#header {
+    width: 100%;
+}
+
+#bless-token {
+    margin-top: 60px;
+}
+
+.bless-token-content {
+    padding-right: 70px;
+    text-align: start;
+    width: 50%;
+}
+
+.bless-token-content h1 {
+    font-size: 60px;
+    line-height: 72px;
+}
+
+.bless-token-content p {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #B7B4C7;
+}
+
+.list-item {
+    padding-top: 40px;
+    display: flex;
+    align-items: start;
+}
+
+.list-item img {
+    width: 56px;
+    height: 56px;
+}
+
+.list-content {
+    padding-left: 25px;
+}
+
+.list-content h2 {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.list-content p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.bless-token-graidant-box {
+    width: 50%;
+    height: 1020px;
+}
+
+.bless-token-btn {
+    margin-top: 90px;
+}
+
+#footer {
+    margin-top: 100px;
+}
+
+@media screen and (max-width:1024px) {
+    #bless-token {
+        margin-top: 40px;
+        padding: 10px;
+    }
+
+    .bless-token-content h1 {
+        font-size: 46px;
+        line-height: 63px;
+    }
+
+    .bless-token-content p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .list-content h2 {
+        font-size: 20px;
+        line-height: 38px;
+    }
+
+    .bless-token-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .list-content {
+        padding-left: 20px;
+    }
+
+    .list-item {
+        padding-top: 30px;
+    }
+
+    .bless-token-btn {
+        margin-top: 35px;
+    }
+
+    .bless-token-btn a {
+        font-size: 16px;
+    }
+
+    #footer {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #bless-token {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .flex-box {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .bless-token-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .bless-token-content h1 {
+        font-size: 32px;
+        line-height: 52px;
+    }
+
+    .list-item img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .list-content h2 {
+        font-size: 18px;
+        line-height: 34px;
+    }
+
+    .list-content {
+        padding-left: 10px;
+    }
+
+    .list-item {
+        padding: 20px 10px 0 0;
+    }
+
+    .bless-token-btn a {
+        font-size: 14px;
+    }
+
+    .bless-token-content p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .bless-token-graidant-box {
+        width: 100%;
+        display: none;
+    }
+
+    #footer {
+        margin-top: 30px;
+    }
+}

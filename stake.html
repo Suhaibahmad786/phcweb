@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stake</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/stake.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Start Header -->
+    <div id="header"></div>
+    <!-- End Header -->
+    <main>
+        <!-- Start Playing Hand Club Section -->
+        <section id="playing-hand">
+            <div class="playing-hand-container flex-box">
+                <div class="playing-hand-content">
+                    <p>COMMUNITY</p>
+                    <h1>Praying Hands Club</h1>
+                    <p>Staking your NFT earns you claimable passive income in BLE$$ token daily. Claim below.</p>
+                    <button class="playing-community-btn">
+                        <a href="#">Learn BLE$$</a>
+                        <a href="#">Token Address</a>
+                    </button>
+                </div>
+                <div class="playing-hand-center-content">
+                    <h2>802/2222</h2>
+                    <p>TOTAL STAKED PHC NFTS</p>
+                </div>
+                <div class="playing-counter">
+                    <h2>36.1%</h2>
+                </div>
+            </div>
+        </section>
+        <!-- End Playing Hand Club Section -->
+        <!-- Start Bless & Claimable Section -->
+        <section id="bless-claimable">
+            <div class="bless-claimable-container flex-box">
+                <div class="your-bless gradiant-container">
+                    <h3>YOUR BLE$$</h3>
+                    <h2>0.00</h2>
+                    <button>
+                        <a class="swap-btn" href="">Swap</a>
+                    </button>
+                </div>
+                <div class="claimable gradiant-container">
+                    <div class="claimable-left-container">
+                        <h3>CLAIMABLE</h3>
+                        <h2>0.00</h2>
+                        <button>
+                            <a class="clain-btn" href="">Claim</a>
+                        </button>
+                    </div>
+                    <div class="reward">
+                        <h3>DAILY REWARD</h3>
+                        <h2>0.00</h2>
+                    </div>
+                    <div class="stacked-hand">
+                        <h3>YOUR STAKED HANDS</h3>
+                        <h2>0.00</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Bless & Claimable Section -->
+        <!-- Start Stake Section -->
+        <section id="stake-unstake">
+            <div class="stake-inner-container flex-box">
+                <div class="stake-box1 container-box">
+                    <p class="unstake-pera">UNSTAKED HANDS</p>
+                    <h2>Stake NFT</h2>
+                    <p>Each staked Praying Hand receives 11 BLE$$ tokens per day for 11 years. </p>
+                    <span class="zero-total">
+                        <p class="zero">0</p>
+                        <p class="total">Total Unstaked PHC NFTs</p>
+                    </span>
+                    <span class="clases-zerohands">
+                        <p class="selected">Selected PHC NFTs to STAKE</p>
+                        <p class="o-hands">0 HANDS</p>
+                    </span>
+                    <span class="rewards-btn">
+                        <p class="bles-rewards">BLE$$ Rewards</p>
+                        <p class="o-bless-day">+0 BLE$$ / Day</p>
+                    </span>
+                    <div class="stake-btn gradiant-border">
+                        <a href="#">CLICK TO STAKE</a>
+                    </div>
+                </div>
+                <div class="stake-box2 container-box">
+                    <p class="unstake-pera">STAKED HANDS</p>
+                    <h2>Unstake NFT</h2>
+                    <p>Unstake your Praying Hands to place them back in your wallet and stop earning BLE$$.</p>
+                    <span class="zero-total">
+                        <p class="zero">0</p>
+                        <p class="total">Total Staked PHC NFTs</p>
+                    </span>
+                    <span class="clases-zerohands">
+                        <p class="selected">Selected PHC NFTs to UNSTAKE</p>
+                        <p class="o-hands">0 HANDS</p>
+                    </span>
+                    <span class="rewards-btn">
+                        <p class="bles-rewards">BLE$$ Rewards</p>
+                        <p class="o-bless-day">-0 BLE$$ / Day</p>
+                    </span>
+                    <div class="stake-btn gradiant-border">
+                        <a href="#">CLICK TO UNSTAKE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Stake Section -->
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+
+</html>

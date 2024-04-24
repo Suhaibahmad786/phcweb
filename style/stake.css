@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    background-color: #13111A;
+    max-width: 1120px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+p {
+    color: #B7B4C7;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 60px;
+}
+.flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.gradiant-container{
+    width: 516px;
+    background: linear-gradient(to right, #A8008A, #F9CA72);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+.gradiant-border{
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to left, #A8008A, #F9CA72);
+    padding: 10px 20px;
+}
+#playing-hand{
+    margin-top: 40px;
+}
+.playing-hand-container{
+    background-color: #1D1A27;
+    height: 312px;
+    border-radius: 22px;
+}
+.playing-hand-content{
+    width: 40%;
+    text-align: start;
+    padding-left: 50px;
+    position: relative;
+}
+.playing-hand-container h1{
+   display: inline-block;
+   padding-top: 10px;
+    padding-top: 25px;
+    font-size: 44px;
+}
+.playing-hand-center-content{
+    width: 30%;
+    text-align: end;
+}
+.playing-hand-center-content h2{
+    font-size: 52px;
+}
+.playing-counter{
+    width: 30%;
+}
+.playing-counter h2{
+    font-size: 36px;
+    position: relative;
+}
+.playing-counter h2::before{
+    content: "";
+    background-image: url("/Images/36percentage.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 171px;
+    height: 171px;
+    position: absolute;
+    top: -100%;
+    left: 74px;
+}
+.playing-community-btn{
+    margin-top: 30px;
+    background-color: transparent;
+    border: none;
+}
+.playing-community-btn a{
+    text-decoration: none;
+    color: #B7B4C7;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 900;
+    padding: 0 50px 0 0;
+}
+#bless-claimable {
+    margin-top: 50px;
+}
+#stake-unstake{
+    margin-top: 30px;
+}
+.your-bless{
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 46px;
+    width: 35%;
+    height: 230px;
+}
+.your-bless h3,
+.claimable-left-container h3{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: start;
+}
+.your-bless h2,
+.claimable-left-container h2{
+    font-size: 44px;
+    color: #00E1FF;
+text-align: start;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+button > .swap-btn, .clain-btn{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    background-color: #302C3F;
+    padding: 18px 38px;
+    border-radius: 60px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 28px;
+}
+.claimable{
+    align-items: start;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 65%;
+    height: 230px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.claimable-inner{
+    display: flex;
+    justify-content: end;
+}
+.reward,
+.stacked-hand {
+    text-align: start;
+}
+.reward h3,
+.stacked-hand h3{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.reward h2,
+.stacked-hand h2{
+    font-size: 44px;
+    color: #00E1FF;
+}
+.stake-inner-container{
+    gap: 26px;
+}
+.container-box{
+    border-radius: 22px;
+    padding: 40px 40px 0 40px;
+    width: 585px;
+    height: 500px;
+    background-color: #1D1A27;
+    text-align: left;
+}
+.container-box h2{
+    padding-top: 22px;
+    font-size: 44px;
+}
+span > p{
+    display: inline;
+}
+span{
+    display: inline-block;
+}
+.zero-total{
+    margin-top: 40px;
+}
+.zero,
+.o-hands {
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    opacity: 30%;
+    color: rgb(0, 0, 0);
+    padding: 12px 36px;
+}
+.o-hands{
+    margin-left: 25px;
+}
+.total{
+    padding-left: 10px;
+}
+.clases-zerohands{
+    margin-top: 25px;
+}
+.rewards-btn{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.o-bless-day{
+    color: white;
+}
+.stake-btn{
+    margin-top: 35px;
+    text-align: center;
+    background-color: #13111A;
+    padding: 16px 28px;
+}
+.stake-btn a {
+    width: 485px;
+  
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+#footer{
+    margin-top: 80px;
+}
+@media screen and (max-width:1024px){
+    #playing-hand {
+        margin-top: 30px;
+        padding: 10px;
+    }
+    .playing-hand-content {
+        padding-left: 20px;
+    }
+    .playing-hand-container {
+        height: auto;
+        padding: 20px 0;
+    }
+    .playing-hand-container h1 {
+        font-size: 34px;
+        line-height: 46px;
+    }
+    .playing-hand-center-content h2 {
+        font-size: 34px;
+        line-height: 46px;
+    }
+    .playing-counter h2 {
+        font-size: 32px;
+
+    }
+    .playing-counter {
+        width: 35%;
+    }
+    .playing-counter h2::before {
+        width: 130px;
+        height: 130px;
+        top: -60%;
+        left: 55px;
+    }
+    .playing-community-btn a {
+        font-size: 16px;
+        padding: 0px 10px 0 0;
+    }
+    .playing-community-btn {
+        margin-top: 15px;
+    }
+    #bless-claimable {
+        margin-top: 35px;
+        padding: 10px;
+    }
+    .your-bless {
+        padding-left: 15px;
+    }
+    .your-bless h2, .claimable-left-container h2 {
+        font-size: 36px;
+    }
+    button > .swap-btn, .clain-btn {
+        font-size: 16px;
+        padding: 12px 30px;
+        margin-top: 10px;
+    }
+    .claimable {
+        padding-left: 15px;
+    }
+    .reward h3, .stacked-hand h3 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .reward h2, .stacked-hand h2 {
+        font-size: 36px;    
+    }
+    #stake-unstake {
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .container-box {
+        height: 470px;
+        padding: 25px 20px 0 25px;
+    }
+   .container-box p{
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .container-box h2 {
+        font-size: 26px;
+        padding: 0;
+    }
+    .zero-total {
+        margin-top: 20px;
+    }
+   .o-hands {
+        display: block;
+        /* padding: 0; */
+        width: 75px;
+        margin-top: 10px;
+        margin: 10px 0 0 0;
+    }
+}
+@media screen and (max-width:768px) {
+    body{
+        box-sizing: border-box;
+    }
+    #playing-hand {
+        margin-top: 10px;
+    }
+    .flex-box {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+    .playing-hand-content {
+        padding-left: 10px;
+        width: 100%;
+    }
+    p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .playing-hand-container h1 {
+        font-size: 28px;
+        line-height: 40px;
+        padding-top: 10px;
+    }
+    .playing-hand-container p{
+        padding: 10px 10px 0 0;
+    }
+    .playing-hand-center-content {
+      width: auto;
+        text-align: start;
+        padding: 10px;
+    }
+    .playing-hand-center-content h2 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .playing-counter {
+        width: auto;
+        text-align: justify;
+        padding: 40px;
+    }
+    .playing-counter h2::before {
+        width: 142px;
+        height: 143px;
+        top: -70%;
+        left: -27px;
+    }
+    #bless-claimable {
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .flex-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .your-bless {
+        width: 97%;
+        padding: 0 0 0 10px;
+    }
+    .your-bless h2, .claimable-left-container h2 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .claimable {
+        width: 97%;
+        margin: 10px 0 0 0;
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0 20px 10px;
+        align-items: start;
+    }
+    .reward {
+        margin-top: 15px;
+    }
+    .container-box {
+        padding: 15px 10px 0 10px;
+        height: auto;
+        width: auto;
+    }
+    .container-box p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .container-box p {
+        padding: 0 10px 0 0;
+    }
+    p.zero, p.o-hands {
+        padding: 10px 40px;
+    }
+    .stake-btn a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .stake-btn {
+        padding: 16px 23px;
+        margin: 25px 15px;
+    }
+ }
